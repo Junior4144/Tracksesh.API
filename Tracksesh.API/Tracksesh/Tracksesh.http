@@ -1,0 +1,6 @@
+@Tracksesh_HostAddress = http://localhost:5156
+
+GET {{Tracksesh_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
