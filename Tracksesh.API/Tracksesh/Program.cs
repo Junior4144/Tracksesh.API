@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using Tracksesh.Data;
 using Tracksesh.Repositories.Implementation;
 using Tracksesh.Repositories.Interface;
 
@@ -7,6 +9,11 @@ builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddOpenApi();
+
+builder.Services.AddDbContext<AuthDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TrackseshConnectionString"));
+});
 
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 
