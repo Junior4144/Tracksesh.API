@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tracksesh")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de271e7a5c3ffe84c5e872059ac1b0ffec588ca8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fc3d3f4a9955d5efa1cd5a6309300eae67f62ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tracksesh")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tracksesh")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,8 +14,8 @@ namespace Tracksesh.Data
         {
             base.OnModelCreating(builder);
 
-            var readerRoleId = "";
-            var writerRoleId = "";
+            var readerRoleId = "cd70dfdc-529c-45b4-9020-8d51146118a6";
+            var writerRoleId = "f0903c93-d5d1-4de7-af71-9431bb8953ef";
 
             var roles = new List<IdentityRole>
             {
@@ -37,7 +37,7 @@ namespace Tracksesh.Data
 
             builder.Entity<IdentityRole>().HasData(roles);
 
-            var adminUserId = "";
+            var adminUserId = "2ee12279-8dcd-46b8-b97c-d3096da594f4";
             var admin = new IdentityUser()
             {
                 Id = adminUserId,
@@ -45,9 +45,9 @@ namespace Tracksesh.Data
                 Email = "admin@tracksesh.com",
                 NormalizedEmail = "admin@tracksesh.com".ToUpper(),
                 NormalizedUserName = "admin@tracksesh.com".ToUpper(),
-                PasswordHash = "",
-                SecurityStamp = "",
-                ConcurrencyStamp = "",
+                PasswordHash = "AQAAAAIAAYagAAAAEGiToLd6AQjHzQ++RZ3u5vxeDF/CazHXaiofx37um3TxFuHQc93iJsxGRbP05/1l/Q==",
+                SecurityStamp = "8a99d7e7-a923-4d16-82ea-43df081b7511",
+                ConcurrencyStamp = "9d7ecfb5-ff6b-4a54-91ce-60fb9383def8",
             };
 
             builder.Entity<IdentityUser>().HasData(admin);
